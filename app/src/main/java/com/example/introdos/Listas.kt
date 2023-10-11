@@ -49,4 +49,26 @@ fun main() {
 
     val filteredNames = peopleAges.filter { it.key.length < 4 }
     println(filteredNames)
+
+    peopleAges.filter { it.key.length < 4 }
+
+    val peopleNames = listOf("Fred", "Ann", "Barbara", "Joe")
+    println(peopleNames.sorted())
+
+
+    println(peopleNames.sortedWith { str1: String, str2: String -> str1.length - str2.length })
+
+
+
+    val words = listOf("about", "acute", "awesome", "balloon", "best", "brief", "class", "coffee", "creative")
+
+
+    val filteredWords = words.filter { it.startsWith("c", ignoreCase = true) }
+        .shuffled()  // crea una copia de la coleccion con los elementos mezclados
+        .take(2)  // toma los primeros elemetos de una coleccion.
+        .sorted()  // muestra una copia de la coleccion con los elementos ordenados.
+    println(filteredWords)
+
+
+
 }
