@@ -1,14 +1,11 @@
-package com.example.introdos
+package com.example.introdos.Classes
 
 import java.util.Date
 
 class Nota {
-
-    class Nota {
         var nombre: String = ""
         var contenido: String = ""
         var fechaCreacion: Date = Date()
 
 
-    }
 }
